@@ -1,0 +1,50 @@
+//
+#stack{
+    background: $black;
+}
+
+.stackContent{
+    overflow: hidden;
+}
+
+.swiper-style{
+    margin-top: 1rem;
+    width: fit-content;
+    padding: 20px 90px;
+}
+
+div > i {
+    font-size: 7rem;
+    text-align: center;
+}
+
+.swiper-style > span {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    padding: 0;
+
+}
+
+.swiper-button{
+    position: absolute;
+    bottom: -20px;
+}
+
+.btn-swiper-container{
+    position: relative;
+}
+
+
+@media only screen and (max-width: 580px) {
+    .swiper-style{
+        padding: 20px 30px;
+    }
+
+    div > i {
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+}

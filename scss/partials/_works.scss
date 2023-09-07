@@ -1,0 +1,126 @@
+//
+#works{
+    background: $lightblack;
+}
+
+.worksInfo{
+    width: 50%;
+    @include nunitoRegular;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.work{
+    width: 100%;
+    height: 100%;
+    background: $bgWork;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    overflow: hidden;
+
+    .workContent{
+        width: inherit;
+        height: inherit;
+        padding: 20px 50px;
+        @include center-column-flex;
+        text-align: justify;
+
+        .workTitle{
+            @include nunitoBold;
+            font-size: 2.5rem;
+            margin-bottom: 1.6rem
+        }
+
+        .workInfo{
+            @include nunitoRegular;
+            font-size: 1.5rem;
+            margin-bottom: 1.6rem
+        }
+
+        .btnVisit{
+            width: 120px;
+            padding: 8px 15px;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+            border: 2px solid $white;
+            background: rgba(0, 0, 0, 0.218);
+            backdrop-filter: blur(6px);
+            color: $white;
+            @include nunitoBold;
+            font-size: 1.6rem;
+            cursor: pointer;
+            transition: all ease-in-out .2s;
+
+            &:hover{
+                transform: translate(5px, -5px);
+                box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.456);
+            }
+        }
+    }
+    
+    .bg1{
+        background: rgb(212,168,45);
+        background: radial-gradient(circle, rgba(212,168,45,0.9) 39%, rgba(255,192,1,0.61) 100%);
+    }
+
+    .bg2{
+        background: rgb(75,207,250);
+        background: radial-gradient(circle, rgba(75,207,250,0.9) 39%, rgba(15,188,249,0.61) 100%);
+        backdrop-filter: blur(4px);
+    }
+
+    .bg3{
+        background: rgb(11,232,129);
+        background: radial-gradient(circle, rgba(11,232,129,0.9) 39%, rgba(5,196,107,0.61) 100%);    
+    }
+
+    .bg4{
+        background: rgb(214,162,232);
+        background: radial-gradient(circle, rgba(214,162,232,0.9) 39%, rgba(130,88,159,0.61) 100%);
+    }
+
+    .bg1, .bg2, .bg3, .bg4{
+        backdrop-filter: blur(7px);
+    }
+    
+}
+
+.work:nth-child(1){
+    grid-area: w1;
+}
+.work:nth-child(2){
+    grid-area: w2;
+}
+.work:nth-child(3){
+    grid-area: w3;
+}
+.work:nth-child(4){
+    grid-area: w4;
+}
+
+.workGrid{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(250px, 100%));
+    grid-template-rows: repeat(2, minmax(250px, 100%));
+    grid-template-areas: 
+    'w1 w2'
+    'w3 w4';
+}
+
+@media only screen and (max-width: 768px){
+
+    .workGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'w1' 'w2' 'w3' 'w4';
+    }
+
+    .worksInfo{
+        width: 100%;
+        text-align: justify;
+    }
+}

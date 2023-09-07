@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: $grey;
+    font-size: 62.5%;
+    color: $white;
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container{
+    width: 80%;
+    max-width: 980px;
+    margin: 0 auto;
+    //border: 1px solid #fff;
+}
+
+.sectionStyle{
+    padding: 5rem 0 8rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.sectionTitle{
+    margin-bottom: 2.5rem;
+    @include nunitoBold;
+    position: relative;
+    font-size: 3rem;
+
+    &::after{
+        content: '';
+        width: 40px;
+        height: 2px;
+        background: $lightBlue;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+    }
+}
+
+

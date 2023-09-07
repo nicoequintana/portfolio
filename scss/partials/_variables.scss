@@ -1,0 +1,53 @@
+//colors
+/* Color Theme Swatches in Hex */
+$lightBlue:#13989c;
+$blue: #586F8C;
+$bluePearl: #495B73;
+$black: #262625;
+$lightblack: #2e2e2e;
+$blackDeep: #181818;
+$grey: #A6A6A6;
+$white: #F2F2F2;
+
+
+
+//images
+$bgWork:url(../../img/bgWorks/bgwork.jpg);
+
+//spacing
+
+//mixin
+//flex mixins
+@mixin center-row-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center-column-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+//font family mixins
+@mixin nunitoRegular {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+@mixin nunitoLight {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+
+@mixin nunitoBold {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+//spacing mixins
+@mixin marginSection {
+    margin: 3rem auto;
+}
