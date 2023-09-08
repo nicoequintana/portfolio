@@ -4,4 +4,24 @@
     width: 100%;
     height: auto;
     padding: 2rem;
+
+    h5{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .footerContactInfo{
+        width: 80%;
+        margin: 0 auto;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+
+        i{
+            font-size: 30px;
+            margin:0 3rem;
+            cursor: pointer;
+        }
+    }
+
 }

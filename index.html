@@ -57,16 +57,16 @@
                     <img src="./img//avatarimg.png" alt="">
                 </div>
                 <div class="aboutMeText">
-                    <h2 class="sectionTitle">About Me</h2>
+                    <h2 class="sectionTitle">About Me | Sobre Mi</h2>
                     <p class="aboutMeInfo">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officia quibusdam placeat
-                        aliquid tempore ut veritatis unde optio est, esse rerum earum debitis sit sint.
+                        Soy un apasionado programador con un firme compromiso por aprender y crecer dentro del mundo de la tecnología. Mi pasión comenzó mientras cursaba materias como desarrollo web y programación en el secundario. Desde entonces he estado dedicando mi tiempo y esfuerzo para perfeccionar mis habilidades en el desarrollo de sofwtware.
+                        Mi enfoque principal es contribuir de manera significativa a proyectos desafiantes mientras colaboro de manera efectiva en equipos multidisciplinarios. Estoy motivado por la resolución de problemas y la creatividad que ofrece la programación, y estoy emocionado de seguir expandiendo mis conocimientos.
                         <br><br>
-                        accusamus ad porro, dolorem quam!
+                        I am a passionate programmer with a strong commitment to learning and growing in the world of technology. My passion began while taking courses in web development and programming during high school. Since then, I have been dedicating my time and effort to perfecting my skills in software development. My primary focus is to make meaningful contributions to challenging projects while effectively collaborating in multidisciplinary teams. I am motivated by problem-solving and the creativity that programming offers, and I am excited to continue expanding my knowledge.
                     </p>
                     <div class="actionButtons">
-                        <button class="btnHireMe">Hire me!</button>
-                        <button class="btnDownloadCv">Download CV</button>
+                        <button class="btnHireMe" id="btnHireMe">Hire me!</button>
+                        <button class='btnDownloadCv'id="btnDownloadCv">Download CV</button>
                     </div>
                 </div>
             </div>
@@ -104,42 +104,49 @@
         <!-- WORKS SECTION - INFO ABOUT MY WORKS -->
         <section id="works" class="sectionStyle">
             <div class="container worksContent">
-                <h2 class="sectionTitle">Some works</h2>
+                <h2 class="sectionTitle">Some works | Algunos proyectos</h2>
                 <p class="worksInfo">
-                    Lorem ipsum dolor sit amet     consectetur adipisicing elit. Cumque, facilis sint
-                    dolorem excepturi doloribus quod repellendus perferendis, voluptatum saepe dolores nisi veritatis.
+                    Les presento algunos de los proyectos en los que trabaje este último tiempo. Gracias por visitarlos.
                 </p>
                 <div class="works workGrid">
                     <div class="work">
                         <div class="workContent bg1">
                             <h3 class="workTitle">Journal App</h3>
-                            <p class="workInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quo sapiente numquam doloremque repellendus quaerat.
+                            <p class="workInfo">Una app realizada enteramente en React. Permite creación de usuarios y login con Google. Te invita a recrear un diario intimo y guardar tus notas junto con imagenes dentro de tu perfil.
                             </p>
-                            <button class="btnVisit">Visit me</button>
+                            <button class="btnVisit">
+                                <a href="https://journal-reactapp.netlify.app/" target="__blank">Visit me</a>
+                            </button>
                         </div>
                     </div>
                     <div class="work">
                         <div class="workContent bg2">
                             <h3 class="workTitle">CKC Project</h3>
-                            <p class="workInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quo sapiente numquam doloremque repellendus quaerat.
+                            <p class="workInfo">Sitio web sobre una empresa que se dedica a comercializar cajas con materiales que estimulan la creatividad de niñ@s y adolescentes a través de distintos juegos.
                             </p>
-                            <button class="btnVisit">Visit me</button>
+                            <button class="btnVisit">
+                                <a href="https://nicoequintana.github.io/CKCproject/" target="__blank">Visit me</a>
+                            </button>
                         </div>
                     </div>
                     <div class="work">
                         <div class="workContent bg3">
-                            <h3 class="workTitle">Gift Expert App</h3>
-                            <p class="workInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quo sapiente numquam doloremque repellendus quaerat.
+                            <h3 class="workTitle">Gif Expert App</h3>
+                            <p class="workInfo">Interfaz sencilla para la búsqueda de gifs a través del consumo de api de GIPHY.
                             </p>
-                            <button class="btnVisit">Visit me</button>
+                            <button class="btnVisit">
+                                <a href="https://gif-expert-reactapp.netlify.app/" target="__blank">Visit me</a>
+                            </button>
                         </div>
                     </div>
                     <div class="work">
                         <div class="workContent bg4">
                             <h3 class="workTitle">Entre NOS</h3>
-                            <p class="workInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quo sapiente numquam doloremque repellendus quaerat.
+                            <p class="workInfo">EntreNOS es un juego realizado enteramente en Javascript Vanilla. Te invita a generar charlas interesantes, saber que opinan tus amig@s y familiares sobre los diversos tópicos que el juego propone. Agrega a los participantes, y por tuno, cada uno deberá elegir una categoria y responder en voz alta lo que indique la tarjeta. Te animas a que nos conozcamos más?
                             </p>
-                            <button class="btnVisit">Visit me</button>
+                            <button class="btnVisit">
+                                <a href="https://entrenos.netlify.app/" target="__blank">Visit me</a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -149,7 +156,7 @@
         <!-- EDUCATION SECTION - INFO ABOUT MY EDUCATION -->
         <section id="education" class="sectionStyle">
             <div class="educationContent container">
-                <h2 class="sectionTitle">Education</h2>
+                <h2 class="sectionTitle">Education | Educación</h2>
                 <div class="gridCardsEducation">
                     <div class="card">
                         <h3>Web Developer</h3>
@@ -177,12 +184,21 @@
 
         <footer>
             <div class="footerContent">
-                
+                <h5>Gracias por visitar mi portfolio.</h5>
+                <div class="footerContactInfo">
+                    <div class="contactInfoPhone">
+                        <i id="contactPhone" class="fas fa-mobile-alt"></i> 
+                    </div>
+                    <div class="contactInfoMail">
+                        <i id="contactMail" class="fas fa-envelope"></i>
+                    </div>
+                    
+                </div>
             </div>
         </footer>
 
-        <!-- ---------------------------------------------- -->
-        <!-- <script src="./js/app.js"></script> -->
+        <!-------------------------------------------------->
+        <script src="./js/app.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script>
             var swiper = new Swiper('.swiper-container', {
@@ -194,7 +210,7 @@
                 },
                 loop: true,
                 autoplay: {
-                    delay: 1000, // Tiempo en milisegundos entre cada cambio de diapositiva
+                    delay: 1000, 
                 },
             });
         </script>
